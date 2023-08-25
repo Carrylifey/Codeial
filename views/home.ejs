@@ -14,4 +14,22 @@
 
     </form>
 
+    <div id="post-list-container">
+        <ul>
+            <% for(posts of posts){%>
+
+                <li>
+                    <%= posts.content %>
+                    <br>
+                    <small>
+                        <%= posts.user.name %>
+                    </small>
+                </li>
+
+        <% }%>
+
+        </ul>
+
+    </div>
+
 </section>
