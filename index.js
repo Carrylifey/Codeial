@@ -24,7 +24,7 @@ app.use(sassMiddleware({
   outputStyle: 'compressed',
   prefix:  '/css'  // Where prefix is at <link rel="stylesheets" href="prefix/style.css"/>
 }));
-app.use(express.urlencoded());
+app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(express.static("./assets"));
 app.use(expressLayouts);
